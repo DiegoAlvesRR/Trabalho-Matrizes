@@ -1,0 +1,24 @@
+print ("digite os valores de uma matriz determinante 4x4: ")
+matriz_11 = int(input("Digite o valor para [1,1]: "))
+matriz_12 = int(input("Digite o valor para [1,2]: "))
+matriz_13 = int(input("Digite o valor para [1,3]: "))
+matriz_14 = int(input("Digite o valor para [1,4]: "))
+matriz_21 = int(input("Digite o valor para [2,1]: "))
+matriz_22 = int(input("Digite o valor para [2,2]: "))
+matriz_23 = int(input("Digite o valor para [2,3]: "))
+matriz_24 = int(input("Digite o valor para [2,4]: "))
+matriz_31 = int(input("Digite o valor para [3,1]: "))
+matriz_32 = int(input("Digite o valor para [3,2]: "))
+matriz_33 = int(input("Digite o valor para [3,3]: "))
+matriz_34 = int(input("Digite o valor para [3,4]: "))
+matriz_41 = int(input("Digite o valor para [4,1]: "))
+matriz_42 = int(input("Digite o valor para [4,2]: "))
+matriz_43 = int(input("Digite o valor para [4,3]: "))
+matriz_44 = int(input("Digite o valor para [4,4]: "))
+
+
+print("tabela de matriz:", "\n", [matriz_11],[matriz_12],[matriz_13],[matriz_14], "\n", [matriz_21],[matriz_22],[matriz_23],[matriz_24], "\n", [matriz_31],[matriz_32],[matriz_33],[matriz_34], "\n", [matriz_41],[matriz_42],[matriz_43],[matriz_44])
+
+det = (matriz_11*matriz_22*matriz_33*matriz_44) -(matriz_11*matriz_22*matriz_34*matriz_43) -(matriz_11*matriz_23*matriz_32*matriz_44) +(matriz_11*matriz_23*matriz_34*matriz_42) +(matriz_11*matriz_24*matriz_32*matriz_43) -(matriz_11*matriz_24*matriz_33*matriz_42) -(matriz_12*matriz_21*matriz_33*matriz_44) +(matriz_12*matriz_21*matriz_34*matriz_43) +(matriz_12*matriz_23*matriz_31*matriz_44) -(matriz_12*matriz_23*matriz_34*matriz_41) -(matriz_12*matriz_24*matriz_31*matriz_43) +(matriz_12*matriz_24*matriz_33*matriz_41) +(matriz_13*matriz_21*matriz_32*matriz_44) -(matriz_13*matriz_21*matriz_34*matriz_42) -(matriz_13*matriz_22*matriz_31*matriz_44) +(matriz_13*matriz_22*matriz_34*matriz_41) +(matriz_13*matriz_24*matriz_31*matriz_42) -(matriz_13*matriz_24*matriz_32*matriz_41) -(matriz_14*matriz_21*matriz_32*matriz_43) +(matriz_14*matriz_21*matriz_33*matriz_42) +(matriz_14*matriz_22*matriz_31*matriz_43) -(matriz_14*matriz_22*matriz_33*matriz_41) -(matriz_14*matriz_23*matriz_31*matriz_42) +(matriz_14*matriz_23*matriz_32*matriz_41) 
+
+print ("Resultado do determinante: ", det)
